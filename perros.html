@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Perros | Tienda</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <div
+        class="container d-flex justify-content-center justify-content-lg-between align-items-center"
+      >
+        <div class="topbar__msg text-center w-100">
+          Despacho <strong>GRATIS</strong> por compras sobre 15.000 CLP (zonas
+          seleccionadas).
+        </div>
+        <div class="topbar__user d-none d-lg-flex gap-3">
+          <a class="topbar__link" href="#">Hola, Rodrigo</a>
+          <a class="topbar__link" href="#">Mi cuenta</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header-orange">
+      <div class="container header-row">
+        <a class="brand" href="#">
+          <span class="brand__text">elTataPet</span>
+        </a>
+
+        <form class="searchbar">
+          <input
+            class="searchbar__input"
+            type="search"
+            placeholder="¿Qué buscas hoy?"
+          />
+          <button class="searchbar__btn" type="submit">🔍</button>
+        </form>
+
+        <a class="cart" href="#">
+          🛒
+          <span class="cart__badge">0</span>
+        </a>
+      </div>
+
+      <!-- CATEGORÍAS -->
+      <nav class="catnav">
+        <div class="container">
+          <ul class="catnav__list">
+            <li><a class="catnav__link active">🐶 Perros</a></li>
+            <li><a class="catnav__link">🐱 Gatos</a></li>
+            <li><a class="catnav__link">🐹 Mascotas Pequeñas</a></li>
+            <li><a class="catnav__link">🐴 Caballos</a></li>
+            <li><a class="catnav__link">💊 Farmacia</a></li>
+            <li><a class="catnav__link">🏷️ Ofertas</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__box">
+          <div class="hero__title">Perros</div>
+          <div
+            class="hero__img"
+            style="background-image: url(&quot;assets/img/amigo_fiel.jpg&quot;)"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BREADCRUMB -->
+    <div class="container mt-4">
+      <ol class="breadcrumb small">
+        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+        <li class="breadcrumb-item active">Perros</li>
+      </ol>
+    </div>
+
+    <!-- MAIN -->
+    <main class="container my-4">
+      <div class="row g-4">
+        <!-- FILTROS -->
+        <aside class="col-12 col-lg-3">
+          <div class="card-soft">
+            <select class="form-select mb-3">
+              <option>Popularidad</option>
+              <option>Precio: menor a mayor</option>
+              <option>Precio: mayor a menor</option>
+            </select>
+
+            <strong>Categorías</strong>
+            <div class="mt-2 ms-2">
+              <div><input type="radio" checked /> Perros</div>
+              <div class="ms-3"><input type="radio" /> Cachorros</div>
+              <div class="ms-3"><input type="radio" /> Adultos</div>
+              <div class="ms-3"><input type="radio" /> Senior</div>
+            </div>
+
+            <hr />
+
+            <strong>Precio</strong>
+            <input type="range" class="form-range" min="2000" max="71000" />
+            <button class="btn btn-orange w-100 mt-3">FILTRAR</button>
+          </div>
+        </aside>
+
+        <!-- PRODUCTOS -->
+        <section class="col-12 col-lg-9">
+          <p class="text-muted">Mostrando 25 resultados</p>
+
+          <div class="row g-4">
+            <!-- 1 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img
+                  src="assets/img/cachupin.png"
+                  alt="Cachupín Adultos 25kg"
+                />
+                <div>Cachupín Adultos 25kg</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img
+                  src="assets/img/soulpet_protein.png"
+                  alt="Soulpet Protein Plus"
+                />
+                <div>Soulpet Protein Plus</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img src="assets/img/appetit.png" alt="Appetit Adulto 20kg" />
+                <div>Appetit Adulto 20kg</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img src="assets/img/topone.png" alt="Top One Adultos" />
+                <div>Top One Adultos</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img
+                  src="assets/img/amigo_fiel.jpg"
+                  alt="Amigo Fiel Multi Etapas 25kg"
+                />
+                <div>Amigo Fiel Multi Etapas 25kg</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img
+                  src="assets/img/masterdog_salsa.png"
+                  alt="Master Dog En Salsa 15kg"
+                />
+                <div>Master Dog En Salsa 15kg</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img src="assets/img/fitformula.png" alt="Fit Fórmula 20kg" />
+                <div>Fit Fórmula 20kg</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img
+                  src="assets/img/sabrokan.png"
+                  alt="Sabro Kan Adulto 25kg"
+                />
+                <div>Sabro Kan Adulto 25kg</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img
+                  src="assets/img/fitformula_small.png"
+                  alt="Fit Fórmula (formato pequeño)"
+                />
+                <div>Fit Fórmula (formato pequeño)</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 10 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img
+                  src="assets/img/soulpet_grainfree.png"
+                  alt="Soulpet Grain Free"
+                />
+                <div>Soulpet Grain Free</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 11 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img src="assets/img/tyson.png" alt="Tyson Adulto" />
+                <div>Tyson Adulto</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 12 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img
+                  src="assets/img/masterdog_premium.png"
+                  alt="Master Dog Premium"
+                />
+                <div>Master Dog Premium</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 13 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img src="assets/img/masko.png" alt="Masko Carne & Cereales" />
+                <div>Masko Carne &amp; Cereales</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 14 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img src="assets/img/monge_light.png" alt="Monge Light" />
+                <div>Monge Light</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 15 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img
+                  src="assets/img/monge_rabbit.png"
+                  alt="Monge Rabbit Rice & Potatoes"
+                />
+                <div>Monge Rabbit Rice &amp; Potatoes</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 16 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img
+                  src="assets/img/monge_rabbit_small.png"
+                  alt="Monge Rabbit Rice & Potatoes (pequeño)"
+                />
+                <div>Monge Rabbit (formato pequeño)</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 17 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img
+                  src="assets/img/monge_mini_chicken.png"
+                  alt="Monge Mini Adult Chicken"
+                />
+                <div>Monge Mini Adult Chicken</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 18 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img src="assets/img/nomade_adulto.png" alt="Nómade Adulto" />
+                <div>Nómade Adulto</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 19 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img
+                  src="assets/img/superpet_adulto.png"
+                  alt="Superpet Adulto"
+                />
+                <div>Superpet Adulto</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 20 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img
+                  src="assets/img/monge_chicken_large.png"
+                  alt="Monge Adult Chicken (saco grande)"
+                />
+                <div>Monge Adult Chicken (saco grande)</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 21 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img
+                  src="assets/img/championdog_adulto_carne.png"
+                  alt="Champion Dog Adultos Carne (paté)"
+                />
+                <div>Champion Dog Adultos Carne (paté)</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 22 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img
+                  src="assets/img/championdog_cachorro_pollo.png"
+                  alt="Champion Dog Cachorro Pollo (paté)"
+                />
+                <div>Champion Dog Cachorro Pollo (paté)</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 23 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img
+                  src="assets/img/colmillo_blanco.png"
+                  alt="Colmillo Blanco Nutrición Ancestral"
+                />
+                <div>Colmillo Blanco Nutrición Ancestral</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 24 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img
+                  src="assets/img/fitformula_adulto_naranja.png"
+                  alt="Fit Fórmula Adulto (naranja)"
+                />
+                <div>Fit Fórmula Adulto (naranja)</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+
+            <!-- 25 -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="product-card">
+                <img
+                  src="assets/img/fitformula_small_turquesa.png"
+                  alt="Fit Fórmula (pequeño turquesa)"
+                />
+                <div>Fit Fórmula (pequeño turquesa)</div>
+                <strong>$—</strong>
+                <button>Añadir al carrito</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- WHATSAPP -->
+    <a class="wa-float">💬</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
